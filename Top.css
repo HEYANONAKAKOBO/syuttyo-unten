@@ -30,6 +30,17 @@
     letter-spacing:2px;
     text-transform:uppercase;
   }
+
+
+  .sp .btn{
+    color:rgb(255, 255, 255);
+    background:rgba(0, 0, 0, 0.5);
+    padding:10px 20px;
+    font-size:10px;
+    text-decoration:none;
+    letter-spacing:2px;
+    text-transform:uppercase;
+  }
   
   .btn:hover{
     border:none;
@@ -71,13 +82,18 @@
   .sp img {
     width: 100%;
 }
-
+.sp img{
+    width: 100%;
+}
 .pc img {
     width: 50%;
     margin: 1px;
 }
 .pc .kyatti img {
     width: 70%;
+}
+.sp .kyatti img {
+    width: 100%;
 }
 
 .pc .soudan img {
@@ -135,6 +151,16 @@
     margin-left: auto;
     display: block;
 }
+.sp .slider_fade img {
+    width: 100%;
+    margin: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    display: block;
+}
+
 
 
 .btn{
@@ -167,4 +193,12 @@
 .botan {
     margin:0 auto;
     width:35em;
+}
+
+.sp .btn {
+    width: 70%;
+}
+
+.sp h1 {
+    font-size: 20px;
 }

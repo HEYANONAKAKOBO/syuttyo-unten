@@ -17,10 +17,15 @@
   }
   
   h1{
-    color:#c0c0c0;
+    color:#222222;
     font-weight:100;
   }
-  
+
+  .sp h1{
+    color:#222222;
+    font-weight:100;
+    font-size: ;
+  }
   .btn{
     color:rgb(255, 255, 255);
     background:rgba(0, 0, 0, 0.5);
@@ -30,12 +35,23 @@
     letter-spacing:2px;
     text-transform:uppercase;
   }
+
+
+  .sp .btn{
+    color:rgb(255, 255, 255);
+    background:rgba(0, 0, 0, 0.5);
+    padding:10px 20px;
+    font-size:10px;
+    text-decoration:none;
+    letter-spacing:2px;
+    text-transform:uppercase;
+  }
   
   .btn:hover{
     border:none;
     background:rgba(0, 0, 0, 0.4);
     background:#fff;
-    padding:20px 20px; #000;
+    padding:20px 20px; 
     color:#1b1b1b;
   }
   
@@ -140,7 +156,7 @@
 .btn{
     width:500px;
     height:80px;
-    line-height:80px;
+    line-height:40px;
 }
 .btn a{
     display:block;
@@ -191,3 +207,157 @@ h2 {
       width: 60%;
       height: 500px;
   }
+
+  .sp h2 {
+      width: 80%;
+  }
+
+  .sp .gaisan {
+      width: 90%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /*モーダルウィンドウ*/
+
+/*--------------------------------------
+  モーダル表示上から_002
+--------------------------------------*/
+.modal_wrap input {
+    display: none;
+  }
+  
+  .modal_overlay {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.0001s, transform 0s 0.001s;
+    transform: scale(0);
+  }
+  
+  .modal_trigger {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .modal_content {
+      align-self: center;
+      width: 60%;
+      padding: 30px 30px 15px;
+      box-sizing: border-box;
+      background: #fff;
+      line-height: 1.4em;
+      transition: 0.5s;
+  }
+  
+  .modal_content p {
+    padding-top: 0;
+  }
+  
+  .close_button {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .modal_wrap input:checked ~ .modal_overlay {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s;
+  }
+  
+  .modal_wrap input:checked ~ .modal_overlay .modal_content {
+    transform: translateY(20px);
+  }
+  
+  .open_button {
+    color:rgb(255, 255, 255);
+    background:rgba(0, 0, 0, 0.5);
+    padding:10px 20px;
+    font-size:40px;
+    text-decoration:none;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+    
+    position: fixed;
+    bottom: 15px; 
+    right: 10px;
+    padding: 1% 1%;
+
+
+      width: 65px;
+      height:65px;
+      background: #444444;
+      border-radius: 50%;
+    
+  }
+  .open_button:hover{
+    border:none;
+    background:rgba(0, 0, 0, 0.4);
+    background:#fff;
+    padding:20px 20px;
+    color:#1b1b1b;
+  }
+  
+  .open-button:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);/*下に動く*/
+  
+  }
+  
+  /*アイコンを表示*/
+  .open-button:after {
+  font-family: "Font Awesome 5 Free";
+    content: "\f2d0";
+      padding-left: 8px;
+  }
+  
+  /*ラベルホバー時*/
+  .open-button:hover {
+    color: #FFFFFF;
+    background-color: #4f96f6;
+    transition: .6s;
+  }
+  open_button
+  .modal_title2 {
+    font-size: 1.5em;
+      position: relative;
+      overflow: hidden;
+    padding-bottom: 10px;
+    margin-top:0;
+    margin-bottom: 0;
+  }
+  
+  .modal_title2::before,
+  .modal_title2::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+  }
+
+.img0 img {
+    width: 50%;
+}
+/*モーダルウィンドウここまで*/
